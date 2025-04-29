@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables & Data Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color:rgb(4, 178, 247);
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background:skyblue ;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>JavaScript Variables & Data Types</h1>
+        <p>Click the button to see different JavaScript data types!</p>
+        <button onclick="showDataTypes()">Show Data Types</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function showDataTypes() {
+            // String
+            let myString = "Hello, Precious!";
+
+            // Number
+            let myNumber = 42;
+
+            // Boolean
+            let myBoolean = true;
+
+            // Array
+            let myArray = ["Apple", "Banana", "Cherry"];
+
+            // Object
+            let myObject = { name: "Precious", age: 25, country: "Nigeria" };
+
+            // Displaying the data types
+            document.getElementById("output").innerHTML = `
+                <strong>String:</strong> ${myString} <br>
+                <strong>Number:</strong> ${myNumber} <br>
+                <strong>Boolean:</strong> ${myBoolean} <br>
+                <strong>Array:</strong> ${myArray.join(", ")} <br>
+                <strong>Object:</strong> Name: ${myObject.name}, Age: ${myObject.age}, Country: ${myObject.country}
+            `;
+        }
+    </script>
+
+</body>
+</html>
